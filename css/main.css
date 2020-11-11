@@ -1,12 +1,14 @@
 *{
 	box-sizing: border-box;
-	border: red solid 1px;
+	border: #F0F8FF solid 1px;
 }
 
 main{
 	margin:50px;
-	
+
 }
+
+
 
 
 body{
@@ -23,7 +25,28 @@ nav ul li a{
  list-style-type:none;
  color:black;
  font-family: 'Lora', serif;
+ display:inline-block;
+ position:relative;
+
  
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width: 100%;
+  right: 0;
+  height: 10%;
+  background: currentColor;
+  transition:width 0.25s ease;
+  color:#D8D1AA;
+
+}
+
+nav ul li a:hover::after {
+  width: 0;
 }
 
 /*font refered from https://fonts.google.com/specimen/Acme?sidebar.open=true&selection.family=Acme*/
@@ -38,9 +61,31 @@ nav ul li{
 }
 
 
-nav ul li a:hover {
-    text-decoration: underline;
 
+
+footer{
+	margin:0 2em;
+	text-align: center;
 }
 
+footer ul li a{
+ text-decoration:none;
+ list-style-type:none;
+ color:black;
+ font-family: 'Lora', serif;
+ 
+}
+
+
+footer ul li{
+ display:inline-block;
+ list-style-type:none;
+ text-align:center;
+ 
+}
+
+
+footer ul li a:hover, footer ul li a:focus {
+  background-color: #D8D1AA;
+}
 /*code learned from https://stackoverflow.com/questions/24727335/add-a-line-under-the-text-when-hover-in-css*/
