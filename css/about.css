@@ -75,3 +75,23 @@
 .prodcontainer:hover{
 	opacity: .50;
 }
+
+
+
+footer ul li a{
+ text-decoration:none;
+ list-style-type:none;
+ color:black;
+ font-family: 'Lora', serif;
+ 
+}
+
+
+footer ul li{
+ display:inline-block;
+ list-style-type:none;
+ width:100px;
+ text-align:center;
+ float:right;
+ 
+}
