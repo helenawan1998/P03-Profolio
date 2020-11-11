@@ -11,7 +11,10 @@ nav ul li a{
  list-style-type:none;
  color:black;
  font-family: 'Acme', sans-serif;
+ 
 }
+
+/*font refered from https://fonts.google.com/specimen/Acme?sidebar.open=true&selection.family=Acme*/
 
 nav ul li{
  display:inline-block;
@@ -21,3 +24,11 @@ nav ul li{
  float:right;
  font-size: 25px;
 }
+
+
+nav ul li a:hover {
+    text-decoration: underline;
+
+}
+
+/*code learned from https://stackoverflow.com/questions/24727335/add-a-line-under-the-text-when-hover-in-css*/
