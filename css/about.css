@@ -8,6 +8,7 @@
   height: 50vh;
   padding-top: 20px;
   margin: 0;
+  margin-left: 2em;
 
 }
 
@@ -20,7 +21,7 @@
 }
 
 .bio{
-	margin:0em 2em;
+	margin-left: 5em;
 }
 
 

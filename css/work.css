@@ -1,0 +1,53 @@
+.intro>h1{
+	font-size: 20px;
+	color:#D8D1AA;
+}
+
+.intro>p{
+	font-size: 30px;
+
+
+}
+
+.intro{
+	margin:30px;
+	margin-left: 60px;
+	width:50%;
+}
+
+.work1{
+	display:flex;
+	justify-content: space-around;
+}
+
+
+.work2{
+	display:flex;
+	justify-content: space-around;
+	margin:6em 0em;
+}
+
+.work1img{
+
+	margin:3em 0em;
+
+}
+
+
+.work2img{
+	margin:3em 0em;
+
+
+}
+
+.project1img{
+	width:35vw;
+	height:50vh;
+}
+
+
+
+.project2img{
+	width:35vw;
+	height:50vh;
+}

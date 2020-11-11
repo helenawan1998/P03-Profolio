@@ -1,6 +1,6 @@
 *{
 	box-sizing: border-box;
-	border: #F0F8FF solid 1px;
+	border:red solid 1px;
 }
 
 main{
@@ -9,17 +9,16 @@ main{
 }
 
 
-
-
 body{
 	background-color: #F0F8FF;
 }
 
 
 nav{
-	margin:6em;
+	margin:3em;
 	
 }
+
 nav ul li a{
  text-decoration:none;
  list-style-type:none;
@@ -30,6 +29,8 @@ nav ul li a{
 
  
 }
+
+/*code learned from https://stackoverflow.com/questions/32902163/line-through-animation-when-hovered*/
 
 nav ul li a::after {
   content: '';
