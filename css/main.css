@@ -9,6 +9,8 @@ nav{
 nav ul li a{
  text-decoration:none;
  list-style-type:none;
+ color:black;
+ font-family: 'Acme', sans-serif;
 }
 
 nav ul li{
@@ -17,5 +19,5 @@ nav ul li{
  width:100px;
  text-align:center;
  float:right;
- font-size: 20px;
+ font-size: 25px;
 }
