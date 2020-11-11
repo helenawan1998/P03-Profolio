@@ -1,0 +1,21 @@
+body{
+	background-color: #F0F8FF;
+}
+
+
+nav{
+	margin:8em;
+}
+nav ul li a{
+ text-decoration:none;
+ list-style-type:none;
+}
+
+nav ul li{
+ display:inline-block;
+ list-style-type:none;
+ width:100px;
+ text-align:center;
+ float:right;
+ font-size: 20px;
+}
