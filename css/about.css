@@ -42,5 +42,36 @@
 	width:70%;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 6em;
+  padding-bottom: 2em;
+}
 
 
+/* three equal columns */
+.column {
+  flex: 33%;
+  max-width: 33%;
+  padding: 2em;
+}
+
+.column img {
+  margin-top: 2em;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.prodcontainer {
+  position: relative;
+  width: 100%;
+}
+
+.prodimage {
+  display: block;
+}
+
+.prodcontainer:hover{
+	opacity: .50;
+}
