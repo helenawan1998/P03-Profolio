@@ -1,7 +1,6 @@
 *{
 	box-sizing: border-box;
-	border:1px red solid;
-
+	
 }
 
 .selfimage{
@@ -78,6 +77,11 @@
 
 
 
+footer{
+	margin:0 2em;
+	text-align: center;
+}
+
 footer ul li a{
  text-decoration:none;
  list-style-type:none;
@@ -90,8 +94,10 @@ footer ul li a{
 footer ul li{
  display:inline-block;
  list-style-type:none;
- width:100px;
  text-align:center;
- float:right;
  
 }
+
+
+
+
