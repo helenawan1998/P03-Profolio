@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'David Libre', serif;
+  font-family: 'Roboto', sans-serif;
   padding: 2rem;
   background-color: #F3DCD3;
 }
@@ -13,13 +13,13 @@ body {
 /*Change the default font.*/
 
 header{
-  font-family: 'Crimson Text', serif;
+  font-family: 'Lora', serif;
   background-color:  #ffb6b9;
 
 }
 
 header>h1{
-  font-family: 'Crimson Text', serif;
+  font-family: 'Lora', serif;
   padding-top: 1.5em;
   margin-bottom:1.5em;
   padding-left: 0.8em;
@@ -27,16 +27,11 @@ header>h1{
 
 
 header>.nav1{
-  font-family: 'Crimson Text', serif;
-  background-color: #bbded6;
+  font-family: 'Lora', serif;
+  background-color: #F3DCD3;
   font-size: 1.2em;
 }
 
-header>.nav2{
-  font-family: 'Crimson Text', serif;
-  background-color: #8ac6d1;
-  font-size: 1.2em;
-}
 
 nav a:hover, nav a:focus {
   text-decoration: none;
@@ -52,22 +47,10 @@ nav a:hover, nav a:focus {
 }
 
 .nav1 a:hover, .nav1 a:focus {
-  background-color: #D8D1AA;
+  background-color: #ffb6b9;
 }
 
 
-.nav2 a {
-  display: inline-block;
-  padding: 1rem;
-  text-decoration: none;
-  transition-property: background-color; 
-  transition-duration: 0.5s;
-  color:black;
-}
-
-.nav2 a:hover, .nav1 a:focus {
-  background-color: #D8D1AA;
-}
 
 .element {
   margin-top:1.5rem;
@@ -80,18 +63,18 @@ nav a:hover, nav a:focus {
 /*----------some basic components-----------*/
 
 h1{
-  font-family: 'Crimson Text', serif;
+  font-family: 'Fredericka the Great', cursive;
   padding-left: 1rem;
 }
 
 h2 {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Lora', serif;
   margin-top: 2rem;
   
 }
 
 h3 {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Fredericka the Great', cursive;
   margin-top: 0.3em;
   margin-bottom: 0.5em;
   
@@ -99,13 +82,17 @@ h3 {
 }
 
 h4 {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Lora', serif;
   margin-top:0.3em;
   
 }
 
 h5{
-  font-family: 'Crimson Text', serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+h6{
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -119,15 +106,54 @@ code {
 
 
 .font1{
-   font-family: 'Crimson Text', serif;
+   font-family: 'Fredericka the Great', cursive;
    font-size: 50px;
 }
 
 .font2{
-  font-family: 'David Libre', serif;
+  font-family: 'Lora', serif;
   font-size: 50px;
 }
 
+.font3{
+  font-family: 'Lora', serif;
+  font-size: 50px;
+}
+
+.block{
+  border:black 1px solid;
+  margin-top: 1em;
+}
+
+.color1 {
+  padding: 20px;
+  display: block;
+  background-color: #F3DCD3;
+}
+
+.color2 {
+  padding: 20px;
+  display: block;
+  background-color: #FFB6B9;
+}
+
+.color3 {
+  padding: 20px;
+  display: block;
+  background-color: #BBDED6;
+}
+
+.color4 {
+  padding: 20px;
+  display: block;
+  background-color: #8AC6D1;
+}
+
+.color5 {
+  padding: 20px;
+  display: block;
+  background-color: #A6B4CE;
+}
 
 
 
@@ -138,18 +164,23 @@ code {
 
 section{
   margin-top: 2.5rem;
+
   
 }
 
-
-section a:hover{
-  color:#F4B400;
+.inlinetext:hover{
+  background-color: #ffb6b9;
 }
 
 section a{
-  color:#002e4d;
-
+  text-decoration: none;
+  color:black;
 }
+
+
+
+/*code learned from https://stackoverflow.com/questions/32902163/line-through-animation-when-hovered*/
+
 
 
 .list{
@@ -159,102 +190,6 @@ section a{
 
 
 /*Style the Radio Button, code learned from https://www.w3schools.com/howto/howto_css_custom_checkbox.asp*/
-
-.Rcontainer {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 1em;
-  cursor: pointer;
-  font-size: 18px;
-  user-select: none;
-  margin-top: 0.8em;
-}
-
-
-.Rcontainer input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-
-.click {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background-color: #bbb;
-  border-radius: 50%;
-}
-
-
-.Rcontainer:hover input ~ .click {
-  background-color: #A6B4CE;
-}
-
-
-.Rcontainer input:checked ~ .click {
-  background-color: #5A7190;
-}
-
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-
-.Rcontainer input:checked ~ .click:after {
-  display: block;
-}
-
-
-.Rcontainer .click:after {
-  top: 9px;
-  left: 9px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
-}
-
-
-/*Add a different hover and focus state styling to the image as a link.Code learned from https://www.w3schools.com/ */
-
-
-.imgurl:hover img{
-  opacity: 0.6;
-}
-
-
-.imgurl:focus img{
-  border:10px solid #5A7190;
-}
-
-/*Style the <input> and <label>, code learning from https://stackoverflow.com/questions/4388102/can-you-style-an-active-form-inputs-label-with-just-css*/
-
-input{
-  margin-bottom:0.5rem;
-  width:15rem; 
-  font-family: 'David Libre', serif;
-  margin-top: 0.5rem;
-}
-
-
-input:focus { background: #D8D1AA; }
-input:hover{ background: #A6B4CE; }
-
-label {
-color: #b36b00;
-font-weight: bold;
-display: block;
-width: 250px;
-}
 
 
 
@@ -273,12 +208,20 @@ width: 250px;
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: #D8D1AA;
+  background-color: #ffb6b9;
   color:black;
 }
 
 
 
+.myimage{
+  width:22vw;
+  height:50vh;
+}
+
+.myimage:hover{
+  opacity: .50;
+}
 
 
 /* 
@@ -302,185 +245,159 @@ p.para{
 /* 
   COMBINED ELEMENTS -------------------
 */
-.product_listing{
-  width: 200px;
-  box-shadow: 0px 5px 10px;
-  padding:0.5rem;
-  background-color: white;
-}
-
-.product_listing img{
-  width:100%;
-}
-
-.submit-btn{
-  display:block;
-}
-
-.payment_form{
-  width: 270px;
-  box-shadow: 0px 5px 10px;
-  padding:0.5rem;
-  background-color: white;
-}
-
-.cart_checkout{
-  width: 260px;
-  box-shadow: 0px 5px 10px;
-  padding:0.5rem;
-  background-color: white;
-}
 
 
-hr {
-  border: 2px solid #867979;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
 
-span.price {
-  float: right;
-}
-
-
-/* Css for website design elements*/
-.deepblue{
-  width: 50%;
-  text-align: center;
-  border:1px solid #D0DEF2;
-  margin-bottom:1em;
-  padding:2em;
-}
-
-.lightblue1{
-  width: 50%;
-  text-align: center;
-  border:1px solid #D0DEF2;
-  margin-bottom:1em;
-  padding:2em;
-}
-
-
-.lightblue2{
-  width: 50%;
-  text-align: center;
-  border:1px solid #D0DEF2;
-  margin-bottom:1em;
-  padding:2em;
-}
-
-
-.lightestblue{
-  width: 50%;
-  text-align: center;
-  border:1px solid black;
-  margin-bottom:1em;
-  padding:2em;
-}
-
-/*Css for product/service web-page*/
-.sContainer{
-  display:flex;
-  justify-content: space-between;
-  padding-top: 1.5em;
-  flex-wrap: wrap;
-}
-
-
-@media screen and (max-width: 50em){
+.element>.nav3{
+  margin:3em;
   
-    .sContainer{
-      padding-top:0.5em;
-    }
-
-
-  
- }
-
-.ser1{
-  margin-top: 1.5em;
-  box-shadow: 0px 5px 10px;
-  padding:0.5rem;
-  background-color: white;
-
 }
 
-.ser2{
-  margin-top: 1.5em;
-  box-shadow: 0px 5px 10px;
-  padding:0.5rem;
-  background-color: white;
-}
+nav ul li a{
+ text-decoration:none;
+ list-style-type:none;
+ color:black;
+ font-family: 'Lora', serif;
+ display:inline-block;
+ position:relative;
 
-
-.ser3{
-  margin-top: 1.5em;
-  box-shadow: 0px 5px 10px;
-  padding:0.5rem;
-  background-color: white;
-}
-
-
-/*Css for checkout web-page*/
-.cContainer{
  
+}
+
+/*code learned from https://stackoverflow.com/questions/32902163/line-through-animation-when-hovered*/
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width: 100%;
+  right: 0;
+  height: 10%;
+  background: currentColor;
+  transition:width 0.25s ease;
+  color:#ffb6b9;
+
+}
+
+nav ul li a:hover::after {
+  width: 0;
+}
+
+/*font refered from https://fonts.google.com/specimen/Acme?sidebar.open=true&selection.family=Acme*/
+
+nav ul li{
+ display:inline-block;
+ list-style-type:none;
+ width:100px;
+ text-align:center;
+ float:left;
+ font-size: 25px;
+}
+
+
+.row {
   display: flex;
   flex-wrap: wrap;
+  padding: 6em;
+  padding-bottom: 2em;
+}
 
-  font-size: 15px;
+
+/* three equal columns */
+.column {
+  flex: 33%;
+  max-width: 33%;
+  padding: 2em;
+}
+
+.column img {
+  margin-top: 2em;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.example {
+        position: relative;
+        padding: 0;
+        width: 300px;
+        display: block;
+        cursor: pointer;
+        overflow: hidden;
+      }
+.content {
+  font-family: 'Fredericka the Great', cursive;
+        opacity: 0;
+        font-size: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #EA86A4;
+        background-color: rgba(200, 200, 200, 0.5);
+        width: 300px;
+        height: 300px;
+        -webkit-transition: all 400ms ease-out;
+        -moz-transition: all 400ms ease-out;
+        -o-transition: all 400ms ease-out;
+        -ms-transition: all 400ms ease-out;
+        transition: all 400ms ease-out;
+        text-align: center;
+      }
+.example .content:hover {
+        opacity: 1;
+      }
+ .example .content .text {
+        height: 0;
+        opacity: 1;
+        transition-delay: 0s;
+        transition-duration: 0.4s;
+      }
+.example .content:hover .text {
+        opacity: 1;
+        transform: translateY(250px);
+        -webkit-transform: translateY(250px);
+      }
+
+
+/*code learned from https://www.w3docs.com/snippets/css/how-to-display-an-animated-text-over-an-image-on-hover-using-only-css3.html*/
+
+footer{
+  margin:0 2em;
+  text-align: center;
+}
+
+footer ul li a{
+ text-decoration:none;
+ list-style-type:none;
+ color:black;
+ font-family: 'Lora', serif;
  
- } 
-
-
- .payContainer{
-
-  display:flex;
-
-  justify-content: center;
-  margin-right: 2em;
-  margin-bottom: 1em;
-
-
- }
-
- @media screen and (max-width: 50em){
-  .payContainer{
-  flex-direction:column;
 }
- }
+
+
+footer ul li{
+ display:inline-block;
+ list-style-type:none;
+ text-align:center;
  
-
-
-
-
-.checkout1{
-  
-  padding:0.5rem;
-  background-color: #f2f2f2;
-
 }
 
 
-.checkout2{
-  
-  padding:0.5rem;
-  background-color: #f2f2f2;
-
+footer ul li a:hover, footer ul li a:focus {
+  background-color: #ffb6b9;
 }
 
-
-.checkout3{
-  box-shadow: 0px 5px 10px;
-  padding:0.5rem;
-  background-color:#f2f2f2;
-  position:relative;
-  height:100%;
-
-
+.prodcontainer {
+  position: relative;
+  width: 100%;
 }
 
-.checkout input{
-  position:absolute;
-  bottom:1em;
+.prodimage {
+  display: block;
 }
+
+.prodcontainer:hover{
+  opacity: .50;
+}
+
 

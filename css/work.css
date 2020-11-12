@@ -1,6 +1,7 @@
 .intro>h1{
 	font-size: 25px;
 	color:#ffb6b9;
+	font-family: 'Lora', serif;
 }
 
 .intro>p{
@@ -41,6 +42,16 @@
 
 }
 
+.work1text>h2{
+	font-family: 'Fredericka the Great', cursive;
+}
+
+
+
+.work2text>h2{
+	font-family: 'Fredericka the Great', cursive;
+}
+
 
 .work1text{
 	margin:3em 0em;
@@ -74,4 +85,8 @@
 .project2img{
 	width:45vw;
 	height:50vh;
+}
+
+.textlink:hover{
+	background-color: #ffb6b9;
 }

@@ -1,6 +1,6 @@
 *{
 	box-sizing: border-box;
-	border:red solid 1px;
+	border:#F3DCD3 solid 1px;
 }
 
 main{
@@ -11,6 +11,7 @@ main{
 
 body{
 	background-color: #F3DCD3;
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -50,7 +51,7 @@ nav ul li a:hover::after {
   width: 0;
 }
 
-/*font refered from https://fonts.google.com/specimen/Acme?sidebar.open=true&selection.family=Acme*/
+
 
 nav ul li{
  display:inline-block;
