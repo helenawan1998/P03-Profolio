@@ -1,3 +1,8 @@
+.body{
+	font-family: 'Crimson Text', serif;
+}
+
+
 .intro>h1{
 	font-size: 25px;
 	color:#ffb6b9;
@@ -6,6 +11,7 @@
 
 .intro>p{
 	font-size: 30px;
+	font-family: 'Crimson Text', serif;
 
 
 }
@@ -50,6 +56,15 @@
 
 .work2text>h2{
 	font-family: 'Fredericka the Great', cursive;
+}
+
+.work1text>p{
+	font-family: 'Crimson Text', serif;
+}
+
+
+.work2text>p{
+	font-family: 'Crimson Text', serif;
 }
 
 

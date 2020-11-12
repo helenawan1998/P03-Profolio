@@ -1,23 +1,41 @@
 *{
-	box-sizing: border-box;
-	border:#F3DCD3 solid 1px;
+ box-sizing: border-box;
+ /*border:red solid 1px;*/
+
 }
 
 main{
-	margin:50px;
+ margin:50px;
 
 }
 
+header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 body{
-	background-color: #F3DCD3;
-  font-family: 'Roboto', sans-serif;
+ background-color: #F3DCD3;
 }
 
 
 nav{
-	margin:3em;
-	
+ margin:3rem;
+ 
+}
+
+nav ul{
+  display:flex;
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  justify-content: flex-end;
+}
+
+nav ul li{
+  margin-left:3rem;
+  font-size: 25px;
 }
 
 nav ul li a{
@@ -51,23 +69,14 @@ nav ul li a:hover::after {
   width: 0;
 }
 
-
-
-nav ul li{
- display:inline-block;
- list-style-type:none;
- width:100px;
- text-align:center;
- float:right;
- font-size: 25px;
-}
+/*font refered from https://fonts.google.com/specimen/Acme?sidebar.open=true&selection.family=Acme*/
 
 
 
 
 footer{
-	margin:0 2em;
-	text-align: center;
+ margin:0 2em;
+ text-align: center;
 }
 
 footer ul li a{

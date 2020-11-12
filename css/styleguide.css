@@ -92,7 +92,7 @@ h5{
 }
 
 h6{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Crimson Text', serif;
 }
 
 
@@ -117,6 +117,11 @@ code {
 
 .font3{
   font-family: 'Lora', serif;
+  font-size: 50px;
+}
+
+.font4{
+  font-family: 'Crimson Text', serif;
   font-size: 50px;
 }
 
@@ -354,8 +359,8 @@ nav ul li{
       }
 .example .content:hover .text {
         opacity: 1;
-        transform: translateY(250px);
-        -webkit-transform: translateY(250px);
+        transform: translateY(150px);
+        -webkit-transform: translateY(150px);
       }
 
 
