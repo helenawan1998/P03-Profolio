@@ -7,14 +7,14 @@
 body {
   font-family: 'David Libre', serif;
   padding: 2rem;
-  background-color: #D0DEF2;
+  background-color: #F3DCD3;
 }
 
 /*Change the default font.*/
 
 header{
   font-family: 'Crimson Text', serif;
-  background-color: #5A7190;
+  background-color:  #ffb6b9;
 
 }
 
@@ -28,13 +28,13 @@ header>h1{
 
 header>.nav1{
   font-family: 'Crimson Text', serif;
-  background-color: #7E8Fa7;
+  background-color: #bbded6;
   font-size: 1.2em;
 }
 
 header>.nav2{
   font-family: 'Crimson Text', serif;
-  background-color: #A6B4CE;
+  background-color: #8ac6d1;
   font-size: 1.2em;
 }
 

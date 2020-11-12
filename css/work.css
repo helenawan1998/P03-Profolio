@@ -1,6 +1,6 @@
 .intro>h1{
-	font-size: 20px;
-	color:#D8D1AA;
+	font-size: 25px;
+	color:#ffb6b9;
 }
 
 .intro>p{
@@ -31,6 +31,7 @@
 
 	margin:3em 0em;
 
+
 }
 
 
@@ -40,14 +41,37 @@
 
 }
 
+
+.work1text{
+	margin:3em 0em;
+	text-align: left;
+}
+
+
+.work1text>a{
+	text-decoration: none;
+	color:#A5A5A5;
+}
+
+
+.work2text>a{
+	text-decoration: none;
+	color:#A5A5A5;
+}
+
+.work2text{
+	margin:3em 0em;
+	text-align: right;
+}
+
 .project1img{
-	width:35vw;
+	width:45vw;
 	height:50vh;
 }
 
 
 
 .project2img{
-	width:35vw;
+	width:45vw;
 	height:50vh;
 }

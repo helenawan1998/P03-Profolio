@@ -10,7 +10,7 @@ main{
 
 
 body{
-	background-color: #F0F8FF;
+	background-color: #F3DCD3;
 }
 
 
@@ -42,7 +42,7 @@ nav ul li a::after {
   height: 10%;
   background: currentColor;
   transition:width 0.25s ease;
-  color:#D8D1AA;
+  color:#ffb6b9;
 
 }
 
@@ -87,6 +87,6 @@ footer ul li{
 
 
 footer ul li a:hover, footer ul li a:focus {
-  background-color: #D8D1AA;
+  background-color: #ffb6b9;
 }
 /*code learned from https://stackoverflow.com/questions/24727335/add-a-line-under-the-text-when-hover-in-css*/
