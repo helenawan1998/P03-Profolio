@@ -104,7 +104,7 @@ h1 {
   margin-bottom: 0;
   padding:5em;
   margin-top: 10em;
-  text-align: center;
+  text-align: left;
   display:block;
   margin-left: auto;
   margin-right: auto;
@@ -113,16 +113,29 @@ h1 {
 
 }
 
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
 .journey>h1{
   font-family: 'Fredericka the Great', cursive;
   font-size: 30px;
   color:black;
 
+width: calc(0.55em * 14); 
+width: 14ch;
+white-space: nowrap;
+overflow: hidden;
+-webkit-animation: typing 8s steps(14, end) infinite,
+           blink-caret .5s step-end infinite alternate;
+
 }
+
+/*typing animation retirved from https://codepen.io/omidgharib/details/IqdLj*/
 
 .journey>h2{
   font-family: 'Lora', serif;
   margin-top: 2em;
+
   
 }
  
