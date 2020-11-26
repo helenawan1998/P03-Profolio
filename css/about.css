@@ -1,5 +1,6 @@
 *{
 	box-sizing: border-box;
+
 	
 }
 
@@ -184,6 +185,10 @@ overflow: hidden;
     padding: 4em;
     padding-top: 0;
   }
+
+  .bio{
+    padding:10em;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -360,6 +365,10 @@ margin-left: auto;
     main{
     margin:20px;
   }
+  .introduce{
+    margin-top: 10em;
+    font-size: 15px;
+  }
 
 }
 
@@ -377,6 +386,10 @@ margin-left: auto;
 
   .introduce{
     margin-top: 10em;
+    font-size: 12px;
+
+    
+    
   }
 
   .journey>h2{
@@ -394,29 +407,63 @@ main{
 
   .introduce{
    width:80%;
+   margin-bottom: 5em;
+   margin-top: 8em;
   }
 
   .journey>h2{
     font-size: 10px;
   }
 
+  .bio{
+    padding:9em;
+  }
+
   .bio>h1{
-    left: 13%;
+    left: 9%;
   }
 
 .bio>p{
 
   position: absolute;
-   left: 18%;
+   left: 15%;
 
   }
 
-  .nav label{
-    padding:0;
+  
+
+.journey{
+  margin-top: 0;
+}
+
   }
 
 
+  @media (max-width: 300px) {
+.bio{
+    padding:8em;
   }
+
+  .bio>p{
+    font-size: 1em;
+
+  position: absolute;
+   left: 8%;
+
+  }
+
+.journey>h1{
+    font-size: 20px;
+  }
+
+  .introduce{
+    font-size: 10px;
+    margin-bottom: 3em;
+  }
+
+
+
+}
 
 
 
