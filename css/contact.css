@@ -40,11 +40,12 @@ input:hover {
 
 .contactmessage {
   text-align: center;
+
 }
 
 .contact1 {
   margin-bottom: 2em;
-  font-family: 'Roboto';
+  font-family: 'Lora', serif;
 }
 
 
@@ -73,5 +74,41 @@ button {
     width: 100%;
   }
 }
+
+
+@media screen and (max-width: 500px){
+	.contactimg {
+	padding:0em;
+	margin-top: 2em;
+	}
+}
+
+
+
+@media screen and (max-width: 420px) {
+  .contact1 {
+ font-size: 10px;
+ text-align: center;
+}
+
+
+	.contactmessage {
+		font-size: 15px;
+	}
+
+
+}
+
+
+@media screen and (max-width: 350px) {
+  
+
+	.contactmessage {
+		font-size: 5px;
+	}
+
+
+}
+
 
 
