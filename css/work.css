@@ -1,6 +1,4 @@
-*{
-	border:red solid 1px;
-}
+
 
 
 .body{
@@ -31,27 +29,60 @@
 
 .project1img{
 	width:45vw;
-	height:50vh;
+	height:100%;
 }
 
 .project2img{
 	width:45vw;
-	height:50vh;
+	height:100%;
 }
 
 .work1{
 	position:relative;
 	margin-top: 5em;
+	display:flex;
+	justify-content: center;
+	align-items: flex-start;
 	
 }
 
 .work2{
 	position:relative;
-	margin-top: 33em;
+	margin-top: 5em;
+	margin-bottom: 5em;
+	display:flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: row-reverse;
+	
 	
 }
 
+.work1text{
+	position:relative;
+	left:-2em;
+	top:2em;
+	background-color:#EFE7E4;
+	text-align: left;
+	padding:2em;
+	
+	
 
+
+}
+
+.work2text{
+    position:relative;
+	background-color:#EFE7E4;
+	text-align: right;
+	padding:2em;
+    right:-2em;
+	top:2em;
+	
+
+}
+
+/*
 .work1img{
 	position:absolute;
 	left:4%;
@@ -86,6 +117,7 @@
 
 
 }
+*/
 
 
 .work1text>h2{
@@ -134,6 +166,52 @@
 }
 
 
+@media (max-width: 850px) {
+
+	.work1{
+		flex-direction: column;
+
+	}
+
+	.work2{
+		flex-direction: column;
+
+	}
+
+	.project1img{
+	width:100%;
+	height:100%;
+	margin:auto;
+}
+
+.project2img{
+	width:100%;
+	height:100%;
+	margin:auto;
+}
+
+
+.work1text{
+	
+	position:static;
+	width:100%;
+	padding:2em;
+	
+	
+
+
+}
+
+.work2text{
+    position:static;
+	
+	width:100%;
+	padding:2em;
+    
+	
+
+}
+}
 
 
 /*

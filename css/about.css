@@ -102,13 +102,36 @@ h1 {
 .main2{
  
  background-color:#F3DCD3 ;
+ position:relative;
+}
+
+.main2>h2{
+  position:absolute;
+  font-size: 35px;
+  top:0.5rem;
+  left:15vw;
 }
 
 
 .aboutcontainer{
+  
   display:flex;
   justify-content: center;
+  
 }
+
+
+
+.self1{
+  width:40%;
+}
+
+
+.self2{
+  width:40%;
+  padding:2rem 1rem;
+}
+
 
 .ownimage{
   padding: 2em;
@@ -117,8 +140,9 @@ h1 {
 }
 
 .self2>p{
-  width:50%;
+  width:100%;
   text-align: left;
+
 }
 
 
@@ -235,6 +259,23 @@ overflow: hidden;
 }
 
 
+
+@media (max-width: 850px) {
+.aboutcontainer{
+  flex-direction: column;
+  text-align: center;
+}
+.self1{
+  width:100%;
+
+}
+
+.self2{
+  width:100%;
+
+}
+
+}
 
 
 @media (max-width: 800px) {

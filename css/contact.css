@@ -35,8 +35,25 @@ input:hover {
 
 .contactsubmit {
   display: inline-block;
-  margin-top: 1em;
+
+  padding: 0.5rem;
+  width:10em;
+  
+  color: black;
+  background-color: #A6B4CE;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+  margin-top: 3em;
 }
+
+.contactsubmit:hover, .contactsubmit:focus {
+  background-color: #ffb6b9;
+  color:black;
+}
+
+
+
 
 .contactmessage {
   text-align: center;
@@ -49,10 +66,9 @@ input:hover {
 }
 
 
-button {
-  float: right;
+.submitbutton{
+  text-align: center;
 }
-
 
 .row {
   background-color: #FFF7F0;
