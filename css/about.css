@@ -29,9 +29,7 @@
 }
 
 
-h1 {
-  font-family:monospace;
-}
+
 
 @keyframes slide {
   0% {
@@ -50,7 +48,7 @@ h1 {
   display:block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 11em;
+  margin-bottom: 18em;
 
 }
 
@@ -68,6 +66,7 @@ h1 {
   animation: animate 4s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  margin-top: 6rem;
 }
 
 @keyframes animate {
@@ -100,16 +99,18 @@ h1 {
 */
 
 .main2{
- 
+ padding:3rem;
  background-color:#F3DCD3 ;
  position:relative;
 }
 
 .main2>h2{
   position:absolute;
-  font-size: 35px;
-  top:0.5rem;
-  left:15vw;
+  font-size: 50px;
+  top:2.8rem;
+  left:18vw;
+  font-family: 'Fredericka the Great', cursive;
+  
 }
 
 
@@ -142,6 +143,9 @@ h1 {
 .self2>p{
   width:100%;
   text-align: left;
+  font-size: 17px;
+
+  font-family: 'Lora', serif;
 
 }
 
@@ -150,6 +154,7 @@ h1 {
  
  background-color:#F3DCD3 ;
 }
+
 
 
 
@@ -244,24 +249,26 @@ overflow: hidden;
   }
 }
 
-@media (max-width: 1000px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
 
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 4em;
-    padding-top: 0;
-  }
+@media (max-width: 1024px) {
+
+.journey>h1{
+  font-size: 40px;
 }
 
 
 
-@media (max-width: 850px) {
-.aboutcontainer{
+  }
+
+/* media query, one column */
+@media (max-width: 1000px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .aboutcontainer{
   flex-direction: column;
   text-align: center;
 }
@@ -272,24 +279,34 @@ overflow: hidden;
 
 .self2{
   width:100%;
+  padding:2rem 1rem;
 
 }
 
+.main2>h2{
+  font-size: 60px;
+  top:2.5rem;
+  
+}
+
+.self2>p{
+  font-size: 20px;
+}
 }
 
 
-@media (max-width: 800px) {
-.main{
-  margin:30px;
-}
-/*
-.introduce{
-  width:80%;
-  }*/
-
+@media (max-width: 770px) {
+  .bio{
+    margin-bottom: 10em;
   }
 
-/* media query, one column */
+  .journey>h1{
+    font-size: 50px;
+  }
+
+}
+
+
 @media (max-width: 700px) {
   .column {
     flex: 100%;
@@ -306,11 +323,7 @@ overflow: hidden;
     background-size: 70%;
   }
 
-  /*
-  .introduce{
-  margin-top: 0;
-  width:85%;
-  }*/
+  
 }
 
 @media (max-width: 680px) {
@@ -339,13 +352,9 @@ margin-left: auto;
   .bio>p{
 
     font-size: 15px;
-    margin-top: 7rem;
+    margin-top: 12rem;
   }
-/*
-  .introduce{
-  margin-top: 0;
-  width:70%;
-  }*/
+
 
 }
 
@@ -361,12 +370,6 @@ margin-left: auto;
     font-size: 15px;
   }
 
-  /*
-
-  .introduce{
-  margin-top: 0;
-  width:85%;
-  }*/
 
   .journey>h2{
     font-size: 20px;
@@ -374,8 +377,23 @@ margin-left: auto;
 }
 
 
-@media (max-width: 520px) {
+@media (max-width: 540px) {
 
+  .journey>h1{
+    font-size: 35px;
+  }
+
+  .bio>h1{
+    left: 19%;
+  }
+
+  }
+
+
+@media (max-width: 520px) {
+.bio{
+  margin-bottom: 30rem;
+}
 
   .bio>h1{
     left: 20%;
@@ -388,12 +406,17 @@ margin-left: auto;
 
   }
 
-  /*
+  .main2>h2{
+  font-size: 50px;
+  top:2.7rem;
+  
+}
 
-  .introduce{
-  margin-top: 5rem;
-  width:90%;
-  }*/
+  .self2>p{
+  font-size: 16px;
+}
+
+ 
 }
 
 
@@ -401,6 +424,13 @@ margin-left: auto;
 .journey>h2{
     font-size: 15px;
   }
+
+  .main2>h2{
+  font-size: 45px;
+  top:2.8rem;
+  left:20vw;
+  
+}
 
   }
 
@@ -417,17 +447,27 @@ margin-left: auto;
 
   }
 
-  main{
-    margin:25px;
-  }
+  .self2{
+  
+  padding:1rem 1rem;
+
+}
+
+  
 
   }
 
 
   @media (max-width: 420px) {
 
+    .bio{
+    
+    margin-bottom: 23rem;
+
+  }
+
     .bio>h1{
-    left: 15%;
+    left: 13%;
   }
 .bio>p{
 
@@ -436,80 +476,90 @@ margin-left: auto;
 
   }
 
-    main{
-    margin:20px;
-  }
-
-  /*
-  .introduce{
-    margin-top: 10em;
-    font-size: 15px;
-  }
-
-  */
+  .self2{
+  
+  padding:1rem 0rem;
 
 }
 
 
+    
+
+  
+}
+
+
 @media (max-width: 400px) {
+  .bio{
+    margin-bottom: 26rem;
+  }
 
   .bio>h1{
     font-size: 40px;
   }
 
-  main{
-    margin:10px;
-  }
   
-/*
-  .introduce{
-    margin-top: 10em;
-    font-size: 12px;
 
-    
-    
-  }
-
-  */
 
   .journey>h2{
     font-size: 13px;
   }
 
+
+  .main2>h2{
+  font-size: 38px;
+  top:3.2rem;
+  left:24vw;
+  
 }
+
+
+
+
+}
+
+
+@media (max-width: 375px) {
+
+  .bio{
+    margin-bottom: 19rem;
+
+
+  }
+
+
+  }
 
 
 @media (max-width: 360px) {
 
-main{
-    margin:0px;
-  }
-  /*
-
-  .introduce{
-   width:80%;
-   margin-bottom: 5em;
-   margin-top: 8em;
-  }
-  */
+.journey>h1{
+  font-size: 30px;
+}
 
   .journey>h2{
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .bio{
-    padding:9em;
+    padding:7em;
+    margin-bottom: 23rem;
+
   }
 
   .bio>h1{
-    left: 9%;
+    left: 12%;
   }
 
 .bio>p{
 
   position: absolute;
-   left: 15%;
+   left: 17%;
 
+  }
+
+  .main3{
+    background-color: #FFF7F0;
   }
 
   
@@ -518,33 +568,98 @@ main{
   margin-top: 0;
 }
 
+
+
+.self2>p{
+  font-size: 14px;
+}
+
+  }
+
+
+
+  @media (max-width: 340px) {
+
+.bio{
+    padding:7em;
+    margin-bottom: 18rem;
+
+  }
+
+  .bio>h1{
+    font-size: 35px;
+    left: 13%;
+  }
+
+.bio>p{
+
+  position: absolute;
+   left: 14%;
+
+  }
+
+  .main2>h2{
+  font-size: 30px;
+  top:3.7rem;
+  left:30vw;
+  
+}
+
+.self2>p{
+  font-size: 13px;
+  
+}
+
+.journey>h1{
+    font-size: 25px;
+  }
+
+
   }
 
 
   @media (max-width: 300px) {
 .bio{
-    padding:8em;
+    padding:6em;
   }
 
   .bio>p{
-    font-size: 1em;
+    font-size: 0.7em;
 
   position: absolute;
-   left: 8%;
+   left: 20%;
+   margin-top: 15rem;
 
   }
 
-.journey>h1{
+
+@media (max-width: 280px) {
+.bio{
+    padding:5em;
+    margin-bottom: 23em;
+  }
+
+  .bio>h1{
+    left:10%;
+  }
+
+  .bio>p{
+    font-size: 0.7em;
+
+  position: absolute;
+   left: 17%;
+   margin-top: 12rem;
+
+  }
+
+  .journey>h1{
     font-size: 20px;
   }
 
-/*
-  .introduce{
-    font-size: 10px;
-    margin-bottom: 3em;
-  }
+  
 
-  */
+
+  
 
 
 
