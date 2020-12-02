@@ -173,11 +173,14 @@ nav ul#social-media > li {
 
 
 footer{
+    position:relative;
+    bottom:0;
 
  text-align: center;
 background-image: linear-gradient(120deg, #FFB6B9 0%, #A6B4CE 100%);
-/*background-image: linear-gradient(120deg, #FFB6B9 0%, #A6B4CE 100%);*/
+
  padding:2em;
+ 
 }
 
 /*color code retirved from https://webgradients.com/*/

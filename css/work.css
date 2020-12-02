@@ -24,7 +24,7 @@ overflow: hidden;
 /*typing animation retirved from https://codepen.io/omidgharib/details/IqdLj*/
 
 .intro>p{
-	font-size: 30px;
+	font-size: 25px;
 	font-family: 'Crimson Text', serif;
 	margin-top: 1em;
 
@@ -33,7 +33,7 @@ overflow: hidden;
 
 .intro{
 	margin:30px;
-	margin-left: 60px;
+	margin-left: 5em;
 	width:50%;
 }
 
@@ -140,6 +140,7 @@ overflow: hidden;
 }
 
 
+
 @media (max-width: 850px) {
 
 	.work1{
@@ -202,6 +203,10 @@ overflow: hidden;
 	width:65%;
 }
 
+.intro{
+	margin-left: 3em;
+}
+
 	}
 
 @media (max-width: 800px) {
@@ -209,6 +214,10 @@ overflow: hidden;
 .intro>p{
 	font-size: 25px;
 
+}
+
+.intro{
+	margin-left: 3em;
 }
 }
 
