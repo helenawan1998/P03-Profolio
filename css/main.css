@@ -185,16 +185,16 @@ background-image: linear-gradient(120deg, #FFB6B9 0%, #A6B4CE 100%);
 
 /*color code retirved from https://webgradients.com/*/
 
-footer ul li a{
+footer a{
  text-decoration:none;
- list-style-type:none;
+ 
  color:black;
  font-family: 'Lora', serif;
  
 }
 
 
-footer ul li{
+footer p{
  display:inline-block;
  list-style-type:none;
  text-align:center;
@@ -202,7 +202,7 @@ footer ul li{
 }
 
 
-footer ul li a:hover, footer ul li a:focus {
+footer p a:hover, footer p a:focus {
   background-color: #ffb6b9;
 }
 
