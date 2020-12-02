@@ -39,7 +39,7 @@
     transform:translateX(25%);
   }
 }
-/*backgroud color changing code retrived from https://codepen.io/chris22smith/pen/RZogMa*/
+/*backgroud color changing code retrieved from https://codepen.io/chris22smith/pen/RZogMa*/
 
 
 .bio{
@@ -78,7 +78,7 @@
   }
 }
 
-/*text animation code retrived from https://codepen.io/FrankieDoodie/pen/dgVGad*/
+/*text animation code retrieved from https://codepen.io/FrankieDoodie/pen/dgVGad*/
 
 .bio>p{
 	font-family: 'Lora', serif;
@@ -87,16 +87,6 @@
 }
 
 
-/*
-.introduce{
-  width:60%;
-   text-align: center;
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-*/
 
 .main2{
  padding:3rem;
@@ -158,7 +148,7 @@
 
 
 
-/*color code retirved from https://webgradients.com/*/
+/*color code retireved from https://webgradients.com/*/
 
 .journey{
   margin-bottom: 0;
@@ -190,7 +180,7 @@ overflow: hidden;
 
 }
 
-/*typing animation retirved from https://codepen.io/omidgharib/details/IqdLj*/
+/*typing animation retireved from https://codepen.io/omidgharib/details/IqdLj*/
 
 .journey>h2{
   font-family: 'Lora', serif;
