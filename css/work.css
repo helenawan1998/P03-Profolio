@@ -6,12 +6,22 @@
 }
 
 
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 .intro>h1{
 	font-size: 25px;
 	color:#ffb6b9;
 	font-family: 'Lora', serif;
 	margin-top: 2em;
+	width: calc(0.55em * 14); 
+width: 14ch;
+white-space: nowrap;
+overflow: hidden;
+-webkit-animation: typing 4s steps(14, end) infinite,
+           blink-caret .5s step-end infinite alternate;
 }
+
+/*typing animation retirved from https://codepen.io/omidgharib/details/IqdLj*/
 
 .intro>p{
 	font-size: 30px;
@@ -82,42 +92,6 @@
 
 }
 
-/*
-.work1img{
-	position:absolute;
-	left:4%;
-
-}
-
-.work2img{
-	position:absolute;
-	right:10%;
-
-}
-
-
-.work1text{
-	position:absolute;
-	background-color:#EFE7E4;
-	text-align: left;
-	padding:2em;
-	right:13%;
-	margin-top: 2em;
-
-
-}
-
-.work2text{
-	position:absolute;
-	background-color:#EFE7E4;
-	text-align: left;
-	padding:2em;
-	left:4%;
-	margin-top: 2em;
-
-
-}
-*/
 
 
 .work1text>h2{
@@ -207,92 +181,156 @@
 	
 	width:100%;
 	padding:2em;
+	text-align: left;
     
 	
 
 }
+.intro{
+	width:70%;
+}
+.intro>p{
+	font-size: 28px;
+
+}
 }
 
 
-/*
-.work2{
-	display:flex;
-	justify-content: space-around;
-	
-	background-color:#EFE7E4;
+@media (max-width: 1050px) {
+
+.intro{
+	width:65%;
 }
 
-.work1img{
+	}
 
-	
+@media (max-width: 800px) {
 
+.intro>p{
+	font-size: 25px;
 
 }
-
-.work1text{
-	background-color:#EFE7E4;
-	text-align: left;
-	
 }
 
 
-.work2img{
-	
+@media (max-width: 700px) {
 
+	.intro{
+	width:75%;
+}
+
+	}
+
+
+	@media (max-width: 600px) {
+
+	.intro{
+	width:80%;
+	margin-left: 2em;
+}
+
+.intro>p{
+	font-size: 23px;
 
 }
 
-.work2text{
-	background-color:#EFE7E4;
-	text-align: right;
+	}
+
+
+	@media (max-width: 450px) {
+
+	.intro{
+	width:75%;
 }
 
+.intro>p{
+	font-size: 20px;
 
+}
+
+	}
+
+
+	@media (max-width: 420px) {
+
+	.intro{
+	width:75%;
+	margin-left: 2.2em;
+}
+
+.intro>p{
+	font-size: 19px;
+
+}
 
 .work1text>h2{
-	font-family: 'Fredericka the Great', cursive;
+	font-size: 20px;
+	margin-bottom: 1em;
 }
-
-
 
 .work2text>h2{
-	font-family: 'Fredericka the Great', cursive;
+	font-size: 20px;
+	margin-bottom: 1em;
 }
 
-.work1text>p{
-	font-family: 'Crimson Text', serif;
+.textlink{
+	font-size: 15px;
 }
 
+	}
 
-.work2text>p{
-	font-family: 'Crimson Text', serif;
+
+
+	@media (max-width: 360px) {
+
+	.intro{
+	width:75%;
+	margin-left: 2.8em;
 }
 
+.intro>p{
+	font-size: 17px;
 
-
-
-.work1text>a{
-	text-decoration: none;
-	color:#A5A5A5;
 }
 
-
-.work2text>a{
-	text-decoration: none;
-	color:#A5A5A5;
+.work1text>h2{
+	font-size: 18px;
+	margin-bottom: 1em;
 }
 
-
-
-
-
-
-.project2img{
-	width:45vw;
-	height:50vh;
+.work2text>h2{
+	font-size: 18px;
+	margin-bottom: 1em;
 }
 
-.textlink:hover{
-	background-color: #ffb6b9;
+.textlink{
+	font-size: 10px;
 }
-*/
+
+	}
+
+
+
+	@media (max-width: 320px) {
+
+
+	.intro{
+	width:75%;
+	margin-left: 2em;
+}
+
+.intro>h1{
+	font-size: 20px;
+}
+
+.intro>p{
+	font-size: 16px;
+
+}
+
+	}
+
+
+
+
+
