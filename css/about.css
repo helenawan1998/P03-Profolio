@@ -632,6 +632,8 @@ margin-left: auto;
 
   }
 
+}
+
 
 @media (max-width: 280px) {
 .bio{
@@ -656,14 +658,7 @@ margin-left: auto;
     font-size: 20px;
   }
 
-  
-
-
-  
-
-
-
-}
+  }
 
 
 
