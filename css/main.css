@@ -178,6 +178,7 @@ nav ul#social-media > li {
   transition-property: background-color; 
   transition-duration: 0.5s;
   margin-top: 3em;
+  font-family: 'Lora', serif;
 }
 
 .button-nav:hover, .button-nav:focus {
