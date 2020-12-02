@@ -105,27 +105,6 @@ body{
 
 
 
-
-
-.button-nav {
-  display: inline-block;
-
-  padding: 0.5rem;
-  
-  color: black;
-  background-color: #A6B4CE;
-  text-decoration: none;
-  transition-property: background-color; 
-  transition-duration: 0.5s;
-  margin-top: 3em;
-}
-
-.button-nav:hover, .button-nav:focus {
-  background-color: #ffb6b9;
-  color:black;
-}
-
-
 .projectbutton{
   text-align: center;
 }
