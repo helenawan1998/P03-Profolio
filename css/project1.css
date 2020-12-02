@@ -61,13 +61,24 @@ body{
 }
 
 
+
+.work1intro2{
+  margin-top: 2em;
+}
+
+.work1intro2>h2{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+}
+
 .work1intro2>p{
   margin-left: auto;
   margin-right: auto;
 
   font-size:23px;
   width:100%;
-  margin-top: 3em;
+  
 }
 
 .work1intro>h1{
@@ -199,23 +210,20 @@ footer{
 
 @media screen and (max-width: 1000px) {
   .work1intro>p{
-  margin-left: auto;
-  margin-right: auto;
 
   font-size:20px;
   width:90%;
-  margin-top: 3em;
-  text-align: center;
+  
+  
 }
 
 
 .work1intro2>p{
-  margin-left: auto;
-  margin-right: auto;
-
+  
   font-size:20px;
   width:90%;
-  margin-top: 3em;
+  margin-top: 0.5em;
+  
 }
 
 
@@ -233,7 +241,6 @@ footer{
 
 .work1intro2>p{
   
-  text-align: center;
 
   font-size:19px;
   width:95%;
@@ -284,7 +291,7 @@ footer{
 
 .work1intro2>p{
   
-  text-align: center;
+  
 
   font-size:18px;
   width:90%;
@@ -295,5 +302,18 @@ footer{
 
 
 }
+
+
+@media screen and (max-width: 450px) {
+
+  .work1intro2>h2{
+    text-align: center;
+    margin-left: auto;
+  margin-right: auto;
+  }
+
+
+
+  }
 
 
