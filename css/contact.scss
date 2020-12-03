@@ -1,0 +1,107 @@
+$common50: 50px;
+$common2: 2em;
+$common0: 0;
+
+@mixin default-type{
+    width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+/* Clear floats after the columns */
+/*css for input learned from
+https://www.w3schools.com/howto/howto_css_contact_form.asp*/
+.column {
+	float: left;
+	width: 50%;
+	padding: $common50;
+	text-align: left;
+}
+.row {
+	margin: $common50;
+	background-color: #FFF7F0;
+	margin-left: $common0;
+	margin-right: $common0;
+	margin-bottom: $common0;
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+input[type=text] {
+	@include default-type;
+}
+select {
+@include default-type;
+}
+textarea {
+@include default-type;
+}
+input {
+	&:hover {
+		background-color: #ffdcd6;
+		transition: .3s;
+	}
+}
+.contactsubmit {
+	display: inline-block;
+	padding: 0.5rem;
+	width: 10em;
+	color: black;
+	background-color: #A6B4CE;
+	text-decoration: none;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+	margin-top: 3em;
+	&:hover {
+		background-color: #ffb6b9;
+		color: black;
+	}
+	&:focus {
+		background-color: #ffb6b9;
+		color: black;
+	}
+}
+.contactmessage {
+	text-align: center;
+}
+.contact1 {
+	margin-bottom: $common2;
+	font-family: 'Lora', serif;
+}
+.submitbutton {
+	text-align: center;
+}
+.contactimg {
+	padding:$common2;
+	width: 100%;
+	flex-grow: 1;
+}
+@media screen and (max-width: 700px) {
+	.column {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 500px) {
+	.contactimg {
+		padding: 0em;
+		margin-top: $common2;
+	}
+}
+@media screen and (max-width: 420px) {
+	.contact1 {
+		font-size: 10px;
+		text-align: center;
+	}
+	.contactmessage {
+		font-size: 15px;
+	}
+}
+@media screen and (max-width: 350px) {
+	.contactmessage {
+		font-size: 5px;
+	}
+}

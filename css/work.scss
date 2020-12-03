@@ -1,0 +1,239 @@
+$common5: 5em;
+$common2: 2em;
+
+@mixin default-type{
+    width: 45vw;
+	height: 100%;
+}
+
+@mixin default-type2{
+    width: 100%;
+		height: 100%;
+		margin: auto;
+}
+
+@-webkit-keyframes "typing" {
+	from {
+		width: 0;
+	}
+}
+@-webkit-keyframes "blink-caret" {
+	50% {
+		border-color: transparent;
+	}
+}
+/*typing animation retirved from https://codepen.io/omidgharib/details/IqdLj*/
+.body {
+	font-family: 'Crimson Text', serif;
+}
+.intro {
+	>h1 {
+		font-size: 25px;
+		color: #ffb6b9;
+		font-family: 'Lora', serif;
+		margin-top: 2em;
+		width: calc(0.55em * 14);
+		width: 14ch;
+		white-space: nowrap;
+		overflow: hidden;
+		-webkit-animation: typing 4s steps(14, end) infinite, blink-caret .5s step-end infinite alternate;
+	}
+	>p {
+		font-size: 25px;
+		font-family: 'Crimson Text', serif;
+		margin-top: 1em;
+	}
+	margin: 30px;
+	margin-left: 5em;
+	width: 50%;
+}
+.project1img {
+@import default-type;
+}
+.project2img {
+	@import default-type;
+}
+.work1 {
+	position: relative;
+	margin-top: $common5;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.work2 {
+	position: relative;
+	margin-top: $common5;
+	margin-bottom: $common5;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: row-reverse;
+}
+.work1text {
+	position: relative;
+	left: -2em;
+	top: $common2;
+	background-color: #EFE7E4;
+	text-align: left;
+	padding: $common2;
+	>h2 {
+		font-family: 'Lora', serif;
+	}
+	>p {
+		font-family: 'Crimson Text', serif;
+	}
+	>a {
+		text-decoration: none;
+		color: #A5A5A5;
+	}
+}
+.work2text {
+	position: relative;
+	background-color: #EFE7E4;
+	text-align: right;
+	padding: $common2;
+	right: -2em;
+	top: $common2;
+	>h2 {
+		font-family: 'Lora', serif;
+	}
+	>p {
+		font-family: 'Crimson Text', serif;
+	}
+	>a {
+		text-decoration: none;
+		color: #A5A5A5;
+	}
+}
+.textlink {
+	&:hover {
+		background-color: #ffb6b9;
+	}
+}
+@media (max-width: 850px) {
+	.work1 {
+		flex-direction: column;
+	}
+	.work2 {
+		flex-direction: column;
+	}
+	.project1img {
+		@import default-type2;
+	}
+	.project2img {
+			@import default-type2;
+	}
+	.work1text {
+		position: static;
+		width: 100%;
+		padding: $common2;
+	}
+	.work2text {
+		position: static;
+		width: 100%;
+		padding: $common2;
+		text-align: left;
+	}
+	.intro {
+		width: 70%;
+		>p {
+			font-size: 28px;
+		}
+	}
+}
+@media (max-width: 1050px) {
+	.intro {
+		width: 65%;
+		margin-left: 3em;
+	}
+}
+@media (max-width: 800px) {
+	.intro {
+		>p {
+			font-size: 25px;
+		}
+		margin-left: 3em;
+	}
+}
+@media (max-width: 700px) {
+	.intro {
+		width: 75%;
+	}
+}
+@media (max-width: 600px) {
+	.intro {
+		width: 80%;
+		margin-left: $common2;
+		>p {
+			font-size: 23px;
+		}
+	}
+}
+@media (max-width: 450px) {
+	.intro {
+		width: 75%;
+		>p {
+			font-size: 20px;
+		}
+	}
+}
+@media (max-width: 420px) {
+	.intro {
+		width: 75%;
+		margin-left: 2.2em;
+		>p {
+			font-size: 19px;
+		}
+	}
+	.work1text {
+		>h2 {
+			font-size: 20px;
+			margin-bottom: 1em;
+		}
+	}
+	.work2text {
+		>h2 {
+			font-size: 20px;
+			margin-bottom: 1em;
+		}
+	}
+	.textlink {
+		font-size: 15px;
+	}
+}
+@media (max-width: 360px) {
+	.intro {
+		width: 75%;
+		margin-left: 2.8em;
+		>p {
+			font-size: 17px;
+		}
+	}
+	.work1text {
+		>h2 {
+			font-size: 18px;
+			margin-bottom: 1em;
+		}
+	}
+	.work2text {
+		>h2 {
+			font-size: 18px;
+			margin-bottom: 1em;
+		}
+	}
+	.textlink {
+		font-size: 10px;
+	}
+}
+@media (max-width: 320px) {
+	.intro {
+		width: 75%;
+		margin-left: $common2;
+		>h1 {
+			font-size: 20px;
+		}
+		>p {
+			font-size: 16px;
+		}
+	}
+}

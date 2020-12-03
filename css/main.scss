@@ -1,0 +1,206 @@
+$common0: 0;
+$back-color:#ffb6b9;
+
+
+/*** INPUT ***/
+/*** LABEL ***/
+/* Hamburger Icon */
+/* Close Icon */
+/*** MENU ***/
+/* Overlay */
+/* List */
+/*add a line under text code learned from https://stackoverflow.com/questions/24727335/add-a-line-under-the-text-when-hover-in-css*/
+/* Social Media */
+/*fold out menu retrived from https://codepen.io/nrodriguez04/pen/wvwRwQg*/
+/*font refered from https://fonts.google.com/specimen/Acme?sidebar.open=true&selection.family=Acme*/
+/*color code retireved from https://webgradients.com/*/
+* {
+	box-sizing: border-box;
+	margin: $common0;
+	padding: $common0;
+}
+main {
+	width: 90%;
+	margin: auto;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+body {
+	background-color: #F3DCD3;
+}
+nav {
+	background: transparent;
+	color: #161515;
+	left: $common0;
+	position: relative;
+	top: $common0;
+	width: 100%;
+	z-index: 9999;
+	input {
+		opacity: $common0;
+		position: absolute;
+		z-index: -1;
+		&:checked {
+			~ {
+				#overlay {
+					background-image: linear-gradient(120deg, #FFB6B9 0%, #A6B4CE 100%);
+					bottom: $common0;
+					left: $common0;
+					height: 100vh;
+					position: fixed;
+					right: $common0;
+					top: $common0;
+					width: 100vw;
+					z-index: -1;
+				}
+				ul {
+					margin: 1em;
+					max-height: inherit;
+					opacity: 1;
+					margin-left: -5%;
+				}
+			}
+		}
+	}
+	label {
+		cursor: pointer;
+		display: block;
+		font: 2em/1 'Oswald', sans-serif;
+		padding: 0.5em;
+		#menu-icon {
+			float: right;
+		}
+	}
+	input[type=checkbox] {
+		&:checked {
+			+ {
+				label {
+					#menu-icon {
+						background: transparent;
+						&:before {
+							top: $common0;
+							transform: rotate(-45deg);
+						}
+						&:after {
+							bottom: $common0;
+							transform: rotate(45deg);
+						}
+					}
+				}
+			}
+		}
+	}
+	ul {
+		font-size: 1.5em;
+		list-style: none;
+		margin: $common0;
+		max-height: $common0;
+		opacity: $common0;
+		overflow: hidden;
+		padding: $common0;
+		text-align: center;
+		>li {
+			margin: 0.5em $common0;
+		}
+		a {
+			color: black;
+			text-decoration: none;
+			font-family: 'Lora', serif;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	ul#social-media {
+		>li {
+			display: inline-block;
+			font-size: 1.5em;
+			margin: 0.5em;
+		}
+	}
+}
+#menu-icon {
+	display: flex;
+	flex-direction: row;
+	background: black;
+	border-radius: 0.05em;
+	height: 0.2em;
+	transition: all 0.2s ease-in-out;
+	width: 100%;
+	margin: 0.4em $common0;
+	max-width: 1em;
+	position: relative;
+	&:before {
+		display: flex;
+		flex-direction: row;
+		background: black;
+		border-radius: 0.05em;
+		height: 0.2em;
+		transition: all 0.2s ease-in-out;
+		width: 100%;
+		content: '';
+		left: $common0;
+		position: absolute;
+		top: -0.4em;
+	}
+	&:after {
+		display: flex;
+		flex-direction: row;
+		background: black;
+		border-radius: 0.05em;
+		height: 0.2em;
+		transition: all 0.2s ease-in-out;
+		width: 100%;
+		content: '';
+		left: $common0;
+		position: absolute;
+		bottom: -0.4em;
+	}
+}
+.button-nav {
+	display: inline-block;
+	padding: 0.5rem;
+	color: black;
+	background-color: #A6B4CE;
+	text-decoration: none;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+	margin-top: 3em;
+	font-family: 'Lora', serif;
+	&:hover {
+		background-color: $back-color;
+		color: black;
+	}
+	&:focus {
+		background-color: $back-color;
+		color: black;
+	}
+}
+footer {
+	position: relative;
+	bottom: $common0;
+	text-align: center;
+	background-image: linear-gradient(120deg, $back-color 0%, #A6B4CE 100%);
+	padding: 2em;
+	a {
+		text-decoration: none;
+		color: black;
+		font-family: 'Lora', serif;
+	}
+	p {
+		display: inline-block;
+		list-style-type: none;
+		text-align: center;
+		a {
+			&:hover {
+				background-color: $back-color;
+			}
+			&:focus {
+				background-color: $back-color;
+			}
+		}
+	}
+}
