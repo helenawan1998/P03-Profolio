@@ -227,8 +227,9 @@ section a{
 
 
 .myimage{
-  width:15vw;
-  height:30vh;
+  margin-top: 1.5em;
+  width:60px;
+  height:60px;
 }
 
 
