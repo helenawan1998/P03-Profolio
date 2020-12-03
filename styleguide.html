@@ -293,6 +293,10 @@
         <h4>CSS selector:</h4>
         <p>.row</p>
         <p>.column</p>
+        <p>.prodimage</p>
+        <p>.prodcontainer</p>
+         <p>.prodoverlay</p>
+          <p>.prodotext</p>
 
         
         <h4>Sample code:</h4>
@@ -301,11 +305,25 @@
     &lt;div class="column"&gt;
       &lt;div class="prodcontainer"&gt;
         &lt;img src="img/moodboard3.jpeg" alt="image about me" class="prodimage"&gt;
+        &lt;div class="prodoverlay"&gt;
+         &lt;div class="prodtext"&gt;
+            &lt;h2&gt; I See The Light&lt;/h2&gt;
+            &lt;p&gt; Oil Painting || September 8, 2018 &lt;/p&gt;
+           
+          &lt;/div&gt;
+        &lt;/div&gt;
         
       &lt;/div&gt;
 
       &lt;div class="prodcontainer"&gt;
         &lt;img src="img/moodboard2.jpeg" alt="image about me" class="prodimage"&gt;
+        &lt;div class="prodoverlay"&gt;
+         &lt;div class="prodtext"&gt;
+            &lt;h2&gt; White Rock Beach&lt;/h2&gt;
+            &lt;p&gt; White Rock || August 30, 2020 &lt;/p&gt;
+           
+          &lt;/div&gt;
+        &lt;/div&gt;
         
       &lt;/div&gt;
     &lt;/div&gt;
@@ -313,10 +331,24 @@
     &lt;div class="column"&gt;
       &lt;div class="prodcontainer"&gt;
         &lt;img src="img/moodboard6.jpeg" alt="image about me" class="prodimage"&gt;
+        &lt;div class="prodoverlay"&gt;
+         &lt;div class="prodtext"&gt;
+            &lt;h2&gt; My Birthday&lt;/h2&gt;
+            &lt;p&gt; Vancouver || October 27, 2019 &lt;/p&gt;
+           
+          &lt;/div&gt;
+        &lt;/div&gt;
         
       &lt;/div&gt;
       &lt;div class="prodcontainer"&gt;
         &lt;img src="img/moodboard5.jpeg" alt="image about me" class="prodimage"&gt;
+        &lt;div class="prodoverlay"&gt;
+         &lt;div class="prodtext"&gt;
+            &lt;h2&gt; Ski Travel &lt;/h2&gt;
+            &lt;p&gt; Whistler || January 18, 2019 &lt;/p&gt;
+           
+          &lt;/div&gt;
+        &lt;/div&gt;
         
       &lt;/div&gt;
     &lt;/div&gt;
@@ -324,11 +356,25 @@
     &lt;div class="column"&gt;
       &lt;div class="prodcontainer"&gtl;
         &lt;img src="img/moodboard4.jpeg" alt="image about me" class="prodimage"&gt;
+        &lt;div class="prodoverlay"&gt;
+         &lt;div class="prodtext"&gt;
+            &lt;h2&gt; Shy&lt;/h2&gt;
+            &lt;p&gt; Oil Painting || August 1, 2018 &lt;/p&gt;
+           
+          &lt;/div&gt;
+        &lt;/div&gt;
         
       &lt;/div&gt;
 
       &lt;div class="prodcontainer"&gt;
         &lt;img src="img/moodboard1.jpeg" alt="image about me" class="prodimage"&gt;
+        &lt;div class="prodoverlay"&gt;
+         &lt;div class="prodtext"&gt;
+            &lt;h2&gt; Sunset&lt;/h2&gt;
+            &lt;p&gt; White Rock || September 10, 2020 &lt;/p&gt;
+           
+          &lt;/div&gt;
+        &lt;/div&gt;
         
       &lt;/div&gt;
     &lt;/div&gt;
@@ -339,15 +385,31 @@
         <h4>Rendered element:</h4>
 
         
-        <div class="row">
+       <div class="row">
     <div class="column">
       <div class="prodcontainer">
         <img src="img/moodboard3.jpeg" alt="image about me" class="prodimage">
+        <div class="prodoverlay">
+         <div class="prodtext">
+            <h2> I See The Light</h2>
+            <p> Oil Painting || September 8, 2018 </p>
+           
+          </div>
+        </div>
         
       </div>
 
       <div class="prodcontainer">
         <img src="img/moodboard2.jpeg" alt="image about me" class="prodimage">
+        <div class="prodoverlay">
+         <div class="prodtext">
+            <h2> White Rock Beach </h2>
+            <p> White Rock || August 30, 2020 </p>
+
+              
+            
+          </div>
+        </div>
         
       </div>
     </div>
@@ -355,10 +417,27 @@
     <div class="column">
       <div class="prodcontainer">
         <img src="img/moodboard6.jpeg" alt="image about me" class="prodimage">
+        <div class="prodoverlay">
+         <div class="prodtext">
+            <h2> My Birthday </h2>
+            <p> Vancouver || October 27, 2019 </p>
+
+              
+           
+          </div>
+        </div>
         
       </div>
       <div class="prodcontainer">
-        <img src="img/moodboard5.jpeg" alt="image about me" class="prodimage">
+       <img src="img/moodboard5.jpeg" alt="image about me" class="prodimage">
+       <div class="prodoverlay">
+         <div class="prodtext">
+            <h2> Ski Travel </h2>
+            <p> Whistler || January 18, 2019 </p>
+              
+           
+          </div>
+        </div>
         
       </div>
     </div>
@@ -366,16 +445,34 @@
     <div class="column">
       <div class="prodcontainer">
         <img src="img/moodboard4.jpeg" alt="image about me" class="prodimage">
+        <div class="prodoverlay">
+         <div class="prodtext">
+            <h2> Shy </h2>
+            <p>Oil Painting || August 1, 2018 </p>
+
+              
+            
+          </div>
+        </div>
         
       </div>
 
       <div class="prodcontainer">
         <img src="img/moodboard1.jpeg" alt="image about me" class="prodimage">
+        <div class="prodoverlay">
+         <div class="prodtext">
+            <h2> Sunset </h2>
+             <p> White Rock || September 10, 2020 </p>
+
+          </div>
+        </div>
         
       </div>
     </div>
   
   </div>
+
+</div>
         
       </section>
 
@@ -579,7 +676,7 @@
         <li> background image code learned from <a href="https://www.w3schools.com/cssref/pr_background-image.asp">https://www.w3schools.com/cssref/pr_background-image.asp</a></li>
         <li> image gallery code learned from <a href="https://codepen.io/GeorgePark/pen/vdqYom">https://codepen.io/GeorgePark/pen/vdqYom</a></li>
         <li> contact form code learned from <a href="https://www.w3schools.com/howto/howto_css_contact_form.asp">https://www.w3schools.com/howto/howto_css_contact_form.asp</a></li>
-        
+         <li> Image hover with text learned from <a href="https://www.w3schools.com/howto/howto_css_image_overlay.asp">https://www.w3schools.com/howto/howto_css_image_overlay.asp</a></li>
 
       </ol>
 

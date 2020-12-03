@@ -399,9 +399,43 @@ footer p a:hover, footer p a:focus {
   display: block;
 }
 
-.prodcontainer:hover{
-  opacity: .50;
+.prodoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #f0d1c7;
 }
+
+.prodcontainer:hover .prodoverlay {
+  opacity: .90;
+  
+}
+
+.prodcontainer h2 {
+  font-family: 'Lora', serif;
+  color:#A6B4CE;
+}
+
+.prodtext {
+  color: black;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/*image hover with text learned from https://www.w3schools.com/howto/howto_css_image_overlay.asp*/
+
 
 
 
