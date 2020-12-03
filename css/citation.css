@@ -1,13 +1,1 @@
-*{
-	box-sizing: border-box;
-}
-
-.citations{
-	padding:2em;
-	
-}
-
-.list{
-  margin-left:1rem;
-  list-style-type: upper-roman;
-}
+*{box-sizing: border-box;}.citations{padding:2em;}.list{margin-left:1rem;list-style-type: upper-roman;}
