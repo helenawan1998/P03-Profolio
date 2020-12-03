@@ -1,0 +1,181 @@
+$backcolor:#EFE7E4;
+$common2: 2rem; 
+@mixin default-type{
+margin-left: auto;
+      margin-right: auto;
+}
+
+body {
+  background-color: $backcolor;
+}
+
+.work1background {
+  background-image: url("../img/work1final1.png");
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  width: 100%;
+  height: 80vh;
+}
+
+.work1intro {
+  display: block;
+  @include default-type;
+  margin-top: 5em;
+  font-family: 'Crimson Text', serif;
+  padding-bottom: 5rem;
+
+  > {
+    h2 {
+      display: block;
+      @include default-type;
+      text-align: center;
+      margin-top: 1em;
+    }
+
+    p {
+      @include default-type;
+      font-size: 23px;
+      width: 100%;
+      margin-top: 3em;
+      text-align: center;
+    }
+  }
+}
+
+.work1intro2 {
+  margin-top: 2em;
+
+  > {
+    h2 {
+     @include default-type;
+      margin-top: 1em;
+    }
+
+    p {
+      @include default-type;
+      font-size: 23px;
+      width: 100%;
+    }
+  }
+}
+
+.work1intro > h1 {
+  text-align: center;
+  font-size: 25px;
+  color: #A6B4CE;
+  font-family: 'Lora', serif;
+}
+
+.work1img img {
+  display: block;
+ @include default-type;
+  margin-top: 3em;
+}
+
+.work1intro2 {
+  margin-bottom: 6em;
+  font-family: 'Crimson Text', serif;
+}
+
+.projectbutton {
+  text-align: center;
+}
+
+.workcontainer {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 $common2 $common2;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem -1rem;
+}
+
+.gallery-item {
+  flex: 1 0 24rem;
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
+
+@supports (display: grid) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: $common2;
+    margin: 0;
+  }
+
+  .gallery-item {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+}
+
+footer {
+  margin-top: 5em;
+}
+
+@media screen and (max-width: 1000px) {
+  .work1intro > p {
+    font-size: 20px;
+    width: 90%;
+  }
+
+  .work1intro2 > p {
+    font-size: 20px;
+    width: 90%;
+    margin-top: 0.5em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .work1intro > p {
+    font-size: 20px;
+    width: 95%;
+  }
+
+  .work1intro2 > p {
+    font-size: 19px;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .work1intro > h1, .work1intro2 > h2 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .work1intro > h1, .work1intro2 > h2 {
+    font-size: 19px;
+  }
+
+  .work1intro > p, .work1intro2 > p {
+    font-size: 18px;
+    width: 90%;
+  }
+}
