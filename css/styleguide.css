@@ -250,7 +250,7 @@ p.para{
 
 /*Shorten the default width of the <p> element, but ensure it is still responsive when the viewport shrinks.*/
 
-.bio>h1{
+.bio>p{
   margin-top: 1em;
   font-family: 'Fredericka the Great', cursive;
   font-size: 45px;
@@ -281,7 +281,7 @@ p.para{
 @-webkit-keyframes typing { from { width: 0; } }
 @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 
-.journey>h2{
+.journey>p{
   font-family: 'Fredericka the Great', cursive;
   font-size: 30px;
   color:black;

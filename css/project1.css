@@ -161,6 +161,27 @@ body{
   }
 }
 
+@media screen and (max-width: 450px){
+
+.work2background{
+  background-image:url("../img/work1final1.png");
+  background-size:100% 100%;
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+
+
+}
+
+.work2background{
+  width:100%;
+  
+  
+}
+
+}
+
+
 @media screen and (max-width: 520px) {
 
 .gallery {
