@@ -10,10 +10,13 @@ body{
 
 /*background image code learned from https://www.w3schools.com/cssref/pr_background-image.asp*/
 
+
+/*
+
 .work1background{
   background-image:url("../img/work1final1.png");
   background-size:cover;
-  -webkit-background-size: cover; /* safari may need this */
+  -webkit-background-size: cover; 
   background-position:center center;
   background-repeat:no-repeat;
   background-attachment: scroll;
@@ -21,12 +24,25 @@ body{
 
 }
 
+
+
+
 .work1background{
   width:100%;
   height:80vh;
 }
 
+*/
 
+
+.parallax img, .parallax {
+  float: left;
+  width: 100%;
+  height: 70vh;
+  margin: 0;
+  padding-bottom: 3em;
+  object-fit: cover;
+}
 
 
 
