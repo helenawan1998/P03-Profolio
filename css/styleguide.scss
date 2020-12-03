@@ -473,6 +473,15 @@ input:hover {
   .ccolumn {
     width: 100%;
   }
+
+  .font1, .font2, .font3 {
+    font-size: 25px;
+    margin-bottom: 1em;
+  }
+
+  .font4 {
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 520px) {
