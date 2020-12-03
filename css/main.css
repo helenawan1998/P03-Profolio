@@ -150,11 +150,14 @@ nav ul > li {
 nav ul a {
     color: black;
     text-decoration: none;
+
 }
 
 nav ul a:hover {
     text-decoration: underline;
 }
+
+/*add a line under text code learned from https://stackoverflow.com/questions/24727335/add-a-line-under-the-text-when-hover-in-css*/
 
 /* Social Media */
 nav ul#social-media > li {
@@ -198,7 +201,7 @@ background-image: linear-gradient(120deg, #FFB6B9 0%, #A6B4CE 100%);
  
 }
 
-/*color code retirved from https://webgradients.com/*/
+/*color code retireved from https://webgradients.com/*/
 
 footer a{
  text-decoration:none;
@@ -222,5 +225,3 @@ footer p a:hover, footer p a:focus {
 }
 
 
-
-/*add a line under text code learned from https://stackoverflow.com/questions/24727335/add-a-line-under-the-text-when-hover-in-css*/

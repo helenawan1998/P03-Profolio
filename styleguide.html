@@ -4,7 +4,8 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Tiffany Wedding Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lingjie Wan's Porfolio Style Guide</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lora:wght@500&display=swap" rel="stylesheet">
@@ -42,6 +43,7 @@
     <label class="color3">#BBDED6</label>
     <label class="color4">#8AC6D1</label>
     <label class="color5">#A6B4CE</label>
+    <label class="color6">#Footer and Navigation Background</label>
   </div>
 
 
@@ -107,37 +109,6 @@
 
       </section>
 
-
-<section class="element">
-        
-
-        <h3>Image Hover with Text</h3>
-        
-
-        <h4>CSS selector:</h4>
-        <p>.example</p>
-        <p>.content</p>
-
-        
-
-        <h4>Sample code:</h4>
-        <code>&lt;div class="example"&gt;
-      &lt;a href="index.html"&gt;&lt;img src="img/selfimage.jpeg" width="300" height="300" alt="selfportrait"&gt;&lt;/a&gt;
-      &lt;div class="content"&gt;
-        &lt;div class="text"&gt;Lingjie Wan&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;</code>
-
-        <h4>Rendered element:</h4>
-        
-         <div class="example">
-      <a href="index.html"><img src="img/selfimage.jpeg" width="300" height="300" alt="selfportrait"></a>
-      <div class="content">
-        <div class="text">Lingjie Wan</div>
-      </div>
-    </div>
-
-      </section>
 
 
 
@@ -217,6 +188,35 @@
 
       </section>
 
+      <section class="element">
+        
+        <h3>Text Animation</h3>
+        
+        <h4>CSS selector:</h4>
+        <p>.bio</p> 
+        <p>.journey</p>
+        
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class="bio"&gt;
+         &lt;h1&gt; Lingjie Wan&lt;/h1&gt;
+       &lt;/div&gt;
+       &lt;div class="journey"&gt;
+         &lt;h2&gt; My Journey&lt;/h2&gt;
+       &lt;/div&gt;
+
+        </code>
+        <h4>Rendered element:</h4>
+        <div class="bio">
+         <h1> Lingjie Wan</h1>
+       </div>
+       <div class="journey">
+         <h2> My Journey</h2>
+       </div>
+
+      </section>
+
+
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
 
@@ -259,32 +259,26 @@
         <code>
           &lt;footer&gt;
 
-    &lt;ul&gt;
-    &lt;li&gt;&lt;a href="styleguide.html"&gt;Styleguide ·&lt;/a &gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="about.html">helenawan1998@gmail.com ·&gt;&lt;/a &gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="http://linkedin.com/in/lingjie-wan-00119b1a6"&gt;Linkedln ·&lt;/a &gt;&lt;/li&gt;
-       &lt;li&gt;&lt;a href="http://linkedin.com/in/lingjie-wan-00119b1a6"&gt;Instagram ·&lt;/a &gt;&lt;/li&gt;
-       &lt;li&gt;&lt;a href="http://linkedin.com/in/lingjie-wan-00119b1a6"&gt;Facebook ·&lt;/a &gt;&lt;/li&gt;
-
-    </ul>
+      &lt;p&gt;
+      &lt;a href="styleguide.html"&gt;Style Guide&lt;/a&gt; || &lt;a href="https://github.com/helenawan1998/P03-Profolio"&gt;Git&lt;/a&gt; || &lt;a href="citation.html"&gt;Citation&lt;/a&gt;
+    &lt;/p&gt;
   
 
-</footer>
+&lt;/footer&gt;
+
+
+
         </code>
         <h4>Rendered element:</h4>
          <footer>
 
-    <ul>
-    <li><a href="styleguide.html">Styleguide ·</a ></li>
-    <li><a href="index.html">helenawan1998@gmail.com ·</a ></li>
-        <li><a href="http://linkedin.com/in/lingjie-wan-00119b1a6">Linkedln ·</a ></li>
-        <li><a href="https://instagram.com/helenawan_jieb?igshid=xo4gnbmupiif">Instagram ·</a ></li>
-        <li><a href="https://www.facebook.com/profile.php?id=100021980354654">Facebook</a ></li>
-
-    </ul>
+      <p>
+      <a href="styleguide.html">Style Guide</a> || <a href="https://github.com/helenawan1998/P03-Profolio">Git</a> || <a href="citation.html">Citation</a>
+    </p>
   
 
 </footer>
+
       </section>
 
 
@@ -338,10 +332,8 @@
         
       &lt;/div&gt;
     &lt;/div&gt;
-  
   &lt;/div&gt;
-        
-      </section>
+
 
         </code>
         <h4>Rendered element:</h4>
@@ -387,7 +379,165 @@
         
       </section>
 
+<section class="element">
+        <h3>Project Image Gallery</h3>
+         <h4>CSS selector:</h4>
+         <p>.workcontainer</p>
+        <p>.gallery</p>
+        <p>.gallery-item</p>
+        <p>.gallery-image</p>
+        
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class="workcontainer"&gt;
 
+
+  &lt;div class="gallery"&gt;
+
+    &lt;div class="gallery-item"&gt;
+      &lt;img class="gallery-image" src="img/work2draw1.png" alt="sketches of the pavilion"&gt;
+    &lt;/div&gt;
+
+    &lt;div class="gallery-item"&gt;
+      &lt;img class="gallery-image" src="img/work2draw2.png" alt="sketches of the pavilion"&gt;
+   &lt;/div&gt;
+
+&lt;div class="gallery-item"&gt;
+     &lt;img class="gallery-image" src="img/work2draw3.png" alt="sketches of the pavilion"&gt;
+ &lt;/div&gt;
+
+&lt;div class="gallery-item"&gt;
+     &lt;img class="gallery-image" src="img/work2final3.png" alt="final prototype of the pavilion"&gt;
+  &lt;/div&gt;
+
+    &lt;div class="gallery-item"&gt;
+      &lt;img class="gallery-image" src="img/work2mood.png" alt="moodboard of the pavilion"&gt;
+   &lt;/div&gt;
+
+   &lt;div class="gallery-item"&gt;
+      &lt;img class="gallery-image" src="img/work2final2.png" alt="final prototype of the pavilion"&gt;
+   &lt;/div&gt;
+
+ &lt;/div&gt;
+
+&lt;/div&gt;
+
+
+
+        </code>
+        <h4>Rendered element:</h4>
+         
+       <div class="workcontainer">
+
+
+  <div class="gallery">
+
+    <div class="gallery-item">
+      <img class="gallery-image" src="img/work2draw1.png" alt="sketches of the pavilion">
+    </div>
+
+    <div class="gallery-item">
+      <img class="gallery-image" src="img/work2draw2.png" alt="sketches of the pavilion">
+    </div>
+
+    <div class="gallery-item">
+      <img class="gallery-image" src="img/work2draw3.png" alt="sketches of the pavilion">
+    </div>
+
+    <div class="gallery-item">
+      <img class="gallery-image" src="img/work2final3.png" alt="final prototype of the pavilion">
+    </div>
+
+    <div class="gallery-item">
+      <img class="gallery-image" src="img/work2mood.png" alt="moodboard of the pavilion">
+    </div>
+
+    <div class="gallery-item">
+      <img class="gallery-image" src="img/work2final2.png" alt="final prototype of the pavilion">
+    </div>
+
+  </div>
+
+</div>
+      </section>
+
+
+      <section class="element">
+        <h3>Contact Me Form</h3>
+         <h4>CSS selector:</h4>
+         <p>.ccolumn</p>
+        
+        
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class="ccolumn"&gt;
+          &lt;label for="uname"&gt;Your Name*&lt;/label&gt;
+         &lt;input type="text" id="uname" name="Yourname" placeholder="Please provide your first name and last name"&gt;
+
+        &lt;label for="pname"&gt;Company's Name*&lt;/label&gt;
+          &lt;input type="text" id="pname" name="Lastname" placeholder="Please provide your company name"&gt;
+
+          &lt;label for="email"&gt;Email*&lt;/label&gt;
+         &lt;input type="text" id="email" name="email" placeholder="Please provide your email"&gt;
+
+          &lt;label for="phone"&gt;Phone*&lt;/label&gt;
+          &lt;input type="text" id="phone" name="add" placeholder="Please provide your phone"&gt;
+        &lt;label for="text">What service are you interested in?*&lt;/label&gt;
+
+         &lt;select id="text" name="text"&gt;
+           &lt;option value="Review"&gt;Leave a Review&lt;/option&gt;
+           &lt;option value="Design"&gt;Web Design&lt;/option&gt;
+            &lt;option value="UX"&gt;User Experience Design&lt;/option&gt;
+           &lt;option value="Drawing"&gt;Illustration Drawing&lt;/option&gt;
+             &lt;option value="Other"&gt;Other&lt;/option&gt;
+         &lt;/select&gt;
+
+
+
+
+      &lt;label for="subject"&gt;Please put your request/comment below&lt;/label&gt;
+      &lt;textarea id="subject" name="subject" placeholder="" style="height:200px"&gt;&lt;/textarea&gt;
+
+     &lt;div class="submitbutton"&gt; &lt;button type="submit" class="contactsubmit" value="Submit"&gt;Submit&lt;/button&gt; &lt;/div&gt;
+
+
+
+        </code>
+        <h4>Rendered element:</h4>
+         
+       <div class="ccolumn">
+      <label for="uname">Your Name*</label>
+      <input type="text" id="uname" name="Yourname" placeholder="Please provide your first name and last name">
+
+      <label for="pname">Company's Name*</label>
+      <input type="text" id="pname" name="Lastname" placeholder="Please provide your company name">
+
+      <label for="email">Email*</label>
+      <input type="text" id="email" name="email" placeholder="Please provide your email">
+
+      <label for="phone">Phone*</label>
+      <input type="text" id="phone" name="add" placeholder="Please provide your phone">
+
+      <label for="text">What service are you interested in?*</label>
+
+      <select id="text" name="text">
+        <option value="Review">Leave a Review</option>
+        <option value="Design">Web Design</option>
+        <option value="UX">User Experience Design</option>
+        <option value="Drawing">Illustration Drawing</option>
+        <option value="Other">Other</option>
+      </select>
+
+
+
+
+      <label for="subject">Please put your request/comment below</label>
+      <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
+
+     <div class="submitbutton"> <button type="submit" class="contactsubmit" value="Submit">Submit</button> </div>
+      </section>
+
+    </section>
       
   <section id="design">
     <h2>Design Elements</h2>

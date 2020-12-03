@@ -193,8 +193,6 @@ overflow: hidden;
 .row {
   display: flex;
   flex-wrap: wrap;
-
-  /*padding: 6em;*/
   padding-bottom: 2em;
 }
 
