@@ -229,7 +229,7 @@ overflow: hidden;
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: .3s ease;
   background-color: #f0d1c7;
 }
 
